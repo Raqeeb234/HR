@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fireworks"></canvas>
+
+<div id="app">
+
+  <!-- LOGIN 1 -->
+  <div class="page active" id="login1">
+    <h2>Enter your name & password</h2>
+    <input id="name1" placeholder="Name">
+    <input id="pass1" type="password" placeholder="Password">
+    <button onclick="login1()">Next</button>
+  </div>
+
+  <!-- STORY 1 (unlocked after login 1) -->
+  <div class="page story" id="story1">
+    <button class="back-btn" onclick="goBack()">⬅</button>
+    <p class="line">Agar tum haan bol do… sab perfect ho jayega.</p>
+    <p class="line">Sach bolu… mujhe aapse kuch kehna hai.</p>
+    <p class="line">Kaafi time se try kar raha hoon… par har baar ruk jaata hoon.</p>
+    <p class="line">Shayad dar lagta tha… ki kahin sab change na ho jaaye.</p>
+    <p class="line">Par aaj… bas bol deta hoon</p>
+    <p class="next-hint">Warda please enter next page</p>
+    <button onclick="nextPage('login2')">Next</button>
+  </div>
+
+  <!-- LOGIN 2 -->
+  <div class="page" id="login2">
+    <button class="back-btn" onclick="goBack()">⬅</button>
+    <h2>🌸 Enter Password</h2>
+    <input id="pass2" type="password">
+    <button onclick="login2()">Next</button>
+  </div>
+
+  <!-- STORY 2 (unlocked after login 2) -->
+  <div class="page story" id="story2">
+    <button class="back-btn" onclick="goBack()">⬅</button>
+    <p class="line">Dekhiae… kitna kuch chhupa hai aapki aankhon mein,</p>
+    <p class="line">Aapne uljha ke rakha hai mujhe apni baaton mein.</p>
+    <p class="line">Jab se aap mile ho…</p>
+    <p class="line">Jab se app mile ho..</p>
+    <p class="line">Log sochte hain chaand raaton mein kahan kho jaata hai… 🌙</p>
+    <p class="line">Aap itni achhi kyun lagne lagi ho…</p>
+    <p class="line">Itna achha koi kaise ho sakta hai…</p>
+    <p class="line">Tum chaand jaisi nahi ho…</p>
+    <p class="line">Chaand app jaisa ho sakta hai 💖</p>
+    <p class="line">Tumhe likhta hoon toh lafz ho tum,</p>
+    <p class="line">Tumhe sochta hoon toh khayaal ho tum,</p>
+    <p class="line">Tumhe maangta hoon toh dua ho tum,</p>
+    <p class="line">Tumhe poochta hoon toh sawaal ho tum,</p>
+    <p class="line">Tumhe kehta hoon toh baat ho tum,</p>
+    <p class="line">Tumhe tarasta hoon toh barsaat ho tum,</p>
+    <p class="line">Tumhe padhta hoon toh sher ho tum…</p>
+    <p class="line">Sach kahun toh… mohabbat ho tum ❤️</p>
+    <p class="next-hint">Amarati please enter next page</p>
+    <button onclick="nextPage('login3')">Next</button>
+  </div>
+
+  <!-- LOGIN 3 -->
+  <div class="page" id="login3">
+    <button class="back-btn" onclick="goBack()">⬅</button>
+    <h2>👸 Character</h2>
+    <input id="char3" placeholder="Hint: Princess">
+    <input id="pass3" type="password" placeholder="Password">
+    <button onclick="login3()">Next</button>
+  </div>
+
+  <!-- STORY 3 (unlocked after login 3) -->
+  <div class="page story" id="story3">
+    <button class="back-btn" onclick="goBack()">⬅</button>
+    <p class="line">I think… I love you mai ap se mohabbat karta hoon</p>
+    <p class="line">Aur agar tum same feel nahi karti… toh bhi theek hai.</p>
+    <p class="line">Bas yeh baat dil mein rakh kar aur nahi reh pa raha tha.</p>
+    <p class="line">Mujhe nahi pata yeh bolna chahiye ya nahi…</p>
+    <p class="line">Par sach yeh hai… main tumhe bahut pasand karta hoon.</p>
+    <p class="line">Agar tum puchogi "kyun"…</p>
+    <p class="line">Toh shayad main perfect reason na de paun…</p>
+    <p class="line">Bas itna jaanta hoon… meri feelings sach hain.</p>
+    <p class="line">Main hamesha tumhe khush dekhna chahta hoon…</p>
+    <p class="line">Aur shayad aur bhi bahut kuch hai…</p>
+    <p class="line">Jo words mein kabhi bata nahi paunga…</p>
+    <p class="line">Par ek baat hamesha sach rahegi…</p>
+    <p class="line">Main tumhe bahut pasand karta hoon. 💘</p>
+    <p class="next-hint">Qamar please enter next page</p>
+    <button onclick="nextPage('login4')">Next</button>
+  </div>
+
+  <!-- LOGIN 4 -->
+  <div class="page" id="login4">
+    <button class="back-btn" onclick="goBack()">⬅</button>
+    <h2>🌙 Personality</h2>
+    <input id="pers4" placeholder="Hint: Moon">
+    <button onclick="login4()">Next</button>
+  </div>
+
+  <!-- STORY 4 (unlocked after login 4) -->
+  <div class="page story" id="story4">
+    <button class="back-btn" onclick="goBack()">⬅</button>
+    <p class="line">Yaar… mujhe nahi pata kaise samjhaun…</p>
+    <p class="line">Par mujhe sirf tum hi dikhte ho… sirf tum.</p>
+    <p class="line">Puri duniya se mujhe farq nahi padta…</p>
+    <p class="line">Mere dil aur dimaag mein sirf tum ho.</p>
+    <p class="line">Tumhe chahna meri kamzori hai</p>
+    <p class="line">Tumse kehna pana hamari majboori hai</p>
+    <p class="line">Aur tum kyun nai samajhte ho meri khamoshi ko…</p>
+    <p class="line">Kya mohabbat ka izhaar karna zaroori hai?</p>
+    <p class="line">Tum woh chaand ho jisme koi daag nahi… 🌙</p>
+    <p class="line">Itni khoobsurat ho… jiska koi hisaab nahi.</p>
+    <p class="line">May Allah protect your smile and your heart 🤍</p>
+    <p class="line">May Allah bless you with success, happiness and everything you dream of… Ameen.</p>
+    <p class="line">You are so beautiful… Allahumma Barik ✨</p>
+    <p class="line">Never stop smiling.</p>
+    <p class="next-hint">Husni enter next page</p>
+    <button onclick="nextPage('pausePage')">Inshallah</button>
+  </div>
+
+  <!-- PAUSE BEFORE FINAL -->
+  <div class="page story" id="pausePage">
+    <p class="line">...</p>
+    <p class="line">Ek second ruk jao </p>
+    <p class="line">Dil se jawab dena...</p>
+    <button onclick="nextPage('final')">Continue</button>
+  </div>
+
+  <!-- FINAL -->
+  <div class="page" id="final">
+    <button class="back-btn" onclick="goBack()">⬅</button>
+    <p class="text1">Ab decision aapke haath mein hai…</p>
+    <p class="text2">Kya app bhi mujhe pasand karti ho?</p>
+    <button class="yes-btn" onclick="yes()">YES 💖</button>
+    <button class="think-btn" onclick="nextPage('think1')">Think 🤍</button>
+  </div>
+
+  <!-- THINK FLOW -->
+  <div class="page story" id="think1">
+    <button class="back-btn" onclick="goBack()">⬅</button>
+    <p class="text">Yaar… ab mai aapko kaise samjhaun…</p>
+    <p class="text">Mujhe sirf aur sirf aap hi dikhte ho…</p>
+    <p class="text">Puri duniya se mujhe koi farq nahi padta…</p>
+    <p class="text">Sach mein… mere dil aur dimaag mein sirf tum ho.</p>
+    <p class="text">If she click ny then go to next page otherwise wise don't go to next page </p>
+    <p class="text">Yaar… tumhe kahan milega mere jaisa insaan 😏💖</p>
+    <button onclick="nextPage('think2')">Next</button>
+  </div>
+
+  <div class="page story" id="think2">
+    <button class="back-btn" onclick="goBack()">⬅</button>
+    <p class="text">Help kardo please 🥺</p>  
+    <p class="text">Mujhe nahi aata kisi ko patana…</p> 
+    <p class="text">Jhoot bol nahi sakta…</p>  
+    <p class="text">Aur tumhe bhool bhi nahi sakta…</p>  
+    <p class="text">Toh please… app hi bata do 😏💖</p>
+    <button onclick="nextPage('think3')">Next</button>
+  </div>
+
+  <div class="page story" id="think3">
+    <button class="back-btn" onclick="goBack()">⬅</button>
+    <p class="text">Bas ek baat aur… 💭</p>  
+    <p class="text">Chahe appka answer jo bhi ho…</p>
+    <p class="text">Main hamesha aapke  respect karunga.</p>
+    <p class="text">Main sirf itna chahta hoon…</p>
+    <p class="text">Tum app khush raho 🤍</p>
+    <p class="text">Aur agar kabhi… thoda sa bhi </p>
+    <p class="text">Meri taraf feel ho…</p>
+    <p class="text">Main yahin hoon… 🌙💖</p>
+    <button onclick="nextPage('dua')">OK</button>
+  </div>
+
+  <!-- DUA -->
+  <div class="page" id="dua">
+    <p class="line">Alhamdulillah 🤍</p>
+    <p class="line">May Allah protect your smile and your heart…</p>
+    <p class="line">May Allah bless you with success, happiness and good health…</p>
+    <p class="line">May all your dreams come true and your life be full of peace…</p>
+    <p class="line">May Allah fill your life with endless happiness and beautiful moments…</p>
+    <p class="line">Ameen 🌙✨</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
