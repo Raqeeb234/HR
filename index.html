@@ -13,10 +13,12 @@
 
   <!-- LOGIN 1 -->
   <div class="page active" id="login1">
-    <h2>Enter your name & password</h2>
-    <input id="name1" placeholder="Name">
-    <input id="pass1" type="password" placeholder="Password">
-    <button onclick="login1()">Next</button>
+    <div class="login-card">
+      <h2>🔐 Enter your name & password</h2>
+      <input id="name1" placeholder="Enter Name">
+      <input id="pass1" type="password" placeholder="Password">
+      <button onclick="login1()">Enter 💜</button>
+    </div>
   </div>
 
   <!-- STORY 1 (unlocked after login 1) -->
@@ -34,9 +36,11 @@
   <!-- LOGIN 2 -->
   <div class="page" id="login2">
     <button class="back-btn" onclick="goBack()">⬅</button>
-    <h2>🌸 Enter Password</h2>
-    <input id="pass2" type="password">
-    <button onclick="login2()">Next</button>
+    <div class="login-card">
+      <h2>🌸 Enter Password</h2>
+      <input id="pass2" type="password" placeholder="Password">
+      <button onclick="login2()">Enter 💜</button>
+    </div>
   </div>
 
   <!-- STORY 2 (unlocked after login 2) -->
@@ -66,10 +70,12 @@
   <!-- LOGIN 3 -->
   <div class="page" id="login3">
     <button class="back-btn" onclick="goBack()">⬅</button>
-    <h2>👸 Character</h2>
-    <input id="char3" placeholder="Hint: Princess">
-    <input id="pass3" type="password" placeholder="Password">
-    <button onclick="login3()">Next</button>
+    <div class="login-card">
+      <h2>👸 Character</h2>
+      <input id="char3" placeholder="Hint: Princess">
+      <input id="pass3" type="password" placeholder="Password">
+      <button onclick="login3()">Enter 💜</button>
+    </div>
   </div>
 
   <!-- STORY 3 (unlocked after login 3) -->
@@ -95,9 +101,11 @@
   <!-- LOGIN 4 -->
   <div class="page" id="login4">
     <button class="back-btn" onclick="goBack()">⬅</button>
-    <h2>🌙 Personality</h2>
-    <input id="pers4" placeholder="Hint: Moon">
-    <button onclick="login4()">Next</button>
+    <div class="login-card">
+      <h2>🌙 Personality</h2>
+      <input id="pers4" placeholder="Hint: Moon">
+      <button onclick="login4()">Enter 💜</button>
+    </div>
   </div>
 
   <!-- STORY 4 (unlocked after login 4) -->
@@ -145,6 +153,7 @@
     <p class="text">Mujhe sirf aur sirf aap hi dikhte ho…</p>
     <p class="text">Puri duniya se mujhe koi farq nahi padta…</p>
     <p class="text">Sach mein… mere dil aur dimaag mein sirf tum ho.</p>
+    <p class="text">If she click ny then go to next page otherwise wise don't go to next page </p>
     <p class="text">Yaar… tumhe kahan milega mere jaisa insaan 😏💖</p>
     <button onclick="nextPage('think2')">Next</button>
   </div>

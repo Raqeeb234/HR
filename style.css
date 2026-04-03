@@ -72,6 +72,66 @@ canvas {
 }
 
 /* ========================= */
+/* 🃏 LOGIN CARD             */
+/* ========================= */
+.login-card {
+  background: rgba(5, 0, 20, 0.88);
+  border-radius: 22px;
+  border: 1.5px solid rgba(255, 100, 255, 0.35);
+  box-shadow:
+    0 0 30px rgba(180, 0, 255, 0.55),
+    0 0 60px rgba(180, 0, 255, 0.3),
+    0 0 100px rgba(180, 0, 255, 0.15),
+    inset 0 0 30px rgba(100, 0, 180, 0.12);
+  padding: 36px 28px 32px;
+  width: 85%;
+  max-width: 340px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.login-card h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.login-card input {
+  border-radius: 10px;
+  width: calc(100% - 30px);
+  max-width: 100%;
+}
+
+.login-card button {
+  margin-top: 20px;
+  width: 65%;
+  border-radius: 40px;
+  padding: 12px 24px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* Center login pages with flex */
+#login1,
+#login2,
+#login3,
+#login4 {
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#login1.active,
+#login2.active,
+#login3.active,
+#login4.active {
+  display: flex;
+}
+
+/* ========================= */
 /* BACK BUTTON               */
 /* ========================= */
 .back-btn {
@@ -172,7 +232,7 @@ h2 {
   color: #E6E6FA;
 }
 #story2 {
-  background: linear-gradient(to top, #6ae7f0, #fbad63);
+  background: linear-gradient(to top,#dd6633, #6ae7f0);
   color: #E6E6FA;
 }
 
@@ -212,7 +272,7 @@ h2 {
 /* 🌙 STORY 4                */
 /* ========================= */
 #story4 {
-  background: linear-gradient(to top, #6fe7f7, #f884f2);
+  background: linear-gradient(to top, #9c0a95,#6fe7f7);
   color: #FDF5E6;
 }
 
